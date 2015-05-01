@@ -152,6 +152,7 @@
     XX(__muldi3)             \
     XX(__mulsf3)             \
     XX(__nedf2)              \
+    XX(__popcount_tab)       \
     XX(__subdf3)             \
     XX(__subsf3)             \
     XX(__truncdfsf2)         \
