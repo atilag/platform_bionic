@@ -189,8 +189,8 @@ double	acos(double);
 double	asin(double);
 double	atan(double);
 double	atan2(double, double);
-double	cos(double);
-double	sin(double);
+double	cos(double) __attribute__((pcs("aapcs")));
+double	sin(double) __attribute__((pcs("aapcs")));
 double	tan(double);
 
 double	cosh(double);
@@ -204,8 +204,8 @@ double	log(double);
 double	log10(double);
 double	modf(double, double *);	/* fundamentally !__pure2 */
 
-double	pow(double, double);
-double	sqrt(double);
+double	pow(double, double) __attribute__((pcs("aapcs")));
+double	sqrt(double) __attribute__((pcs("aapcs")));
 
 double	ceil(double);
 double	fabs(double) __pure2;
@@ -322,7 +322,7 @@ float	logf(float);
 float	modff(float, float *);	/* fundamentally !__pure2 */
 
 float	powf(float, float);
-float	sqrtf(float);
+float	sqrtf(float) __attribute__((pcs("aapcs")));
 
 float	ceilf(float);
 float	fabsf(float) __pure2;
